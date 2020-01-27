@@ -10,7 +10,7 @@
             <c3>c. Answer choice here</c3>
             <c4>d. Answer choice here</c4>        
         </choices>
-        <correct-answer>Insert correct choice here<correct-answer>
+        <correct-answer>Insert correct choice here</correct-answer>
     </question>
 
     <question>
@@ -20,7 +20,7 @@
             <c1>True</c1>
             <c2>False</c2>
         </choices>
-        <correct-answer>Insert correct choice here<correct-answer>
+        <correct-answer>Insert correct choice here</correct-answer>
     </question>
 
     <question>
@@ -35,9 +35,9 @@
             <c3>c. Answer choice here</c3>
             <c4>d. Answer choice here</c4>   
         </choices>
-        <correct-answer>Insert correct choice here for q1<correct-answer>
-        <correct-answer>Insert correct choice here for q2<correct-answer>
-        <correct-answer>Insert correct choice here for q3<correct-answer>
-        <correct-answer>Insert correct choice here for q4<correct-answer>
+        <correct-answer>Insert correct choice here for q1</correct-answer>
+        <correct-answer>Insert correct choice here for q2</correct-answer>
+        <correct-answer>Insert correct choice here for q3</correct-answer>
+        <correct-answer>Insert correct choice here for q4</correct-answer>
     </question>
 </test>
