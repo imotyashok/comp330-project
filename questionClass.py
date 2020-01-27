@@ -1,5 +1,5 @@
 
-#sort out this self buisness, cause it's getting on my nerves
+#sort out this self business, cause it's getting on my nerves
 
 class questionModel:
     questionType = None
@@ -44,7 +44,7 @@ def askQuestions(questionDict):
 
 
 print("try this")
-q1 = questionModel("What is the 2nd thing in this list?", ["A.No","B.More","C.Heroes"])
+q1 = questionModel("What is the 2nd thing in this list?", ["No","More","Heroes"])
 q2 = questionModel("This statement is true", ["True","False"])
 q3 = matchingQuestionModel("This is a matching",["Killer","High","Desolation"],["Queen","Voltage","Row"])
 thisDict = {
