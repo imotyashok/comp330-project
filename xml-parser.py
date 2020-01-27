@@ -12,6 +12,8 @@ print(test.tag)
 # Test function to print out what our XML file looks like; this information
 # can later be stored into a dictionary or some other data structure
 
+questionDictionary = {}
+
 choice_arr = []
 for question in test:
     print('\n')
