@@ -4,34 +4,34 @@
     <question>
         <type>multiple choice</type>
         <q>Which object is a fruit?</q>
-        <choices>
-            <c>A. fork</c>
-            <c>B. apple</c>
-            <c>C. dog</c>
-            <c>D. building</c>
-        </choices>
+        <c>A. fork</c>
+        <c>B. apple</c>
+        <c>C. dog</c>
+        <c>D. building</c>
         <correct-answer>B. apple</correct-answer>
     </question>
 
     <question>
         <type>true false</type>
         <q>Linux is an open-source operating system.</q>
-        <choices>
-            <c>True</c>
-            <c>False</c>
-        </choices>
+        <c>True</c>
+        <c>False</c>
         <correct-answer>True</correct-answer>
     </question>
 
     <question>
         <type>matching</type>
         <q>Match the fruits to their colors.</q>
-        <choices>
-            <c>Apple</c>
-            <c>Banana</c>
-            <c>Orange</c>
-            <c>Tomato</c>
-        </choices>
+        <c1>Apple</c1>
+        <c1>Banana</c1>
+        <c1>Orange</c1>
+        <c1>Tomato</c1>
+
+        <c2>Orange</c2>
+        <c2>Green</c2>
+        <c2>Red</c2>
+        <c2>Yellow</c2>
+
         <correct-answer>Green</correct-answer>
         <correct-answer>Yellow</correct-answer>
         <correct-answer>Orange</correct-answer>
