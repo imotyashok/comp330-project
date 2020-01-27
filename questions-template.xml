@@ -3,41 +3,38 @@
 <test>
     <question>
         <type>multiple choice</type>
-        <q>Insert your question here</q>
+        <q>Which object is a fruit?</q>
         <choices>
-            <c1>a. Answer choice here</c1>
-            <c2>b. Answer choice here</c2>
-            <c3>c. Answer choice here</c3>
-            <c4>d. Answer choice here</c4>        
+            <c>A. fork</c>
+            <c>B. apple</c>
+            <c>C. dog</c>
+            <c>D. building</c>
         </choices>
-        <correct-answer>Insert correct choice here</correct-answer>
+        <correct-answer>B. apple</correct-answer>
     </question>
 
     <question>
         <type>true false</type>
-        <q>Insert your question here</q>
+        <q>Linux is an open-source operating system.</q>
         <choices>
-            <c1>True</c1>
-            <c2>False</c2>
+            <c>True</c>
+            <c>False</c>
         </choices>
-        <correct-answer>Insert correct choice here</correct-answer>
+        <correct-answer>True</correct-answer>
     </question>
 
     <question>
         <type>matching</type>
-        <q>Insert question here</q>
-        <q>Insert question here</q>
-        <q>Insert question here</q>
-        <q>Insert question here</q>
+        <q>Match the fruits to their colors.</q>
         <choices>
-            <c1>a. Answer choice here</c1>
-            <c2>b. Answer choice here</c2>
-            <c3>c. Answer choice here</c3>
-            <c4>d. Answer choice here</c4>   
+            <c>Apple</c>
+            <c>Banana</c>
+            <c>Orange</c>
+            <c>Tomato</c>
         </choices>
-        <correct-answer>Insert correct choice here for q1</correct-answer>
-        <correct-answer>Insert correct choice here for q2</correct-answer>
-        <correct-answer>Insert correct choice here for q3</correct-answer>
-        <correct-answer>Insert correct choice here for q4</correct-answer>
+        <correct-answer>Green</correct-answer>
+        <correct-answer>Yellow</correct-answer>
+        <correct-answer>Orange</correct-answer>
+        <correct-answer>Red</correct-answer>
     </question>
 </test>
