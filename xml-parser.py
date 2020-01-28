@@ -29,7 +29,14 @@ print(q5.questions)
 print(q5.answers)
 print(q6.questions)
 
-
-
+#
+#questoinObject:answers
+#for each in test:
+#if question.tpye = match
+#questiondict.add(matchquestionobject(x,y):z)
+#else
+#questiondict.add(questionmodel)
+#askquestions(questiondict)
+#
 
 
