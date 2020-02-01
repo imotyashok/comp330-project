@@ -30,7 +30,7 @@ for question in test:
             toAdd.append(choice.text)
         if(choice.tag == 'c'):
             panswers.append(choice.text)
-        if(choice.tag == 'correct-answer'):
+        if(choice.tag == 'answer'):
             toAdd.append(choice.text)
     questionDictionary[questionModel(toAdd[1],panswers)] =toAdd[2]
 print(questionDictionary)

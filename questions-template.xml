@@ -8,7 +8,7 @@
         <c>B. apple</c>
         <c>C. dog</c>
         <c>D. building</c>
-        <correct-answer>B. apple</correct-answer>
+        <answer>B. apple</answer>
     </question>
 
     <question>
@@ -16,25 +16,25 @@
         <q>Linux is an open-source operating system.</q>
         <c>True</c>
         <c>False</c>
-        <correct-answer>True</correct-answer>
+        <answer>True</answer>
     </question>
 
     <question>
         <type>matching</type>
         <q>Match the fruits to their colors.</q>
-        <c1>Apple</c1>
-        <c1>Banana</c1>
-        <c1>Orange</c1>
-        <c1>Tomato</c1>
+        <c>Apple</c>
+        <c>Banana</c>
+        <c>Orange</c>
+        <c>Tomato</c>
 
         <c2>Orange</c2>
         <c2>Green</c2>
         <c2>Red</c2>
         <c2>Yellow</c2>
 
-        <correct-answer>Green</correct-answer>
-        <correct-answer>Yellow</correct-answer>
-        <correct-answer>Orange</correct-answer>
-        <correct-answer>Red</correct-answer>
+        <answer>Green</answer>
+        <answer>Yellow</answer>
+        <answer>Orange</answer>
+        <answer>Red</answer>
     </question>
 </test>
