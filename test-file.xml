@@ -1,32 +1,30 @@
 <test>
   <question>
     <type>multiple choice</type>
-    <q>what is 2+2</q>
-    <c>a. 1</c>
-    <c>b. 2</c>
-    <c>c. 3</c>
-    <c>d. 4</c>
-    <answer>d</answer>
+    <q>is no yes</q>
+    <c>a. no</c>
+    <c>b. yes</c>
+    <answer>a</answer>
   </question>
   <question>
     <type>true false</type>
-    <q>i am very tired</q>
+    <q>is today monday</q>
     <c>True</c>
     <c>False</c>
     <answer>true</answer>
   </question>
   <question>
     <type>matching</type>
-    <q>match the fruit to the color</q>
-    <c>apple</c>
-    <c>banana</c>
+    <q>match the color to the fruit</q>
+    <c>red</c>
     <c>orange</c>
-    <c>a. yellow</c>
-    <c>b. green</c>
-    <c>c. purple</c>
-    <c>d. orange</c>
+    <c>yellow</c>
+    <c2>a. banana</c2>
+    <c2>b. strawberry</c2>
+    <c2>c. blueberry</c2>
+    <c2>d. orange</c2>
     <answer>b</answer>
-    <answer>a</answer>
     <answer>d</answer>
+    <answer>a</answer>
   </question>
 </test>

@@ -66,7 +66,7 @@ def make_match_questions(root):
 
     c2_limit = int(input("How many options do you want for people to choose to match with? "))
     for num in range(c2_limit):
-        c2 = etree.SubElement(question,"c")
+        c2 = etree.SubElement(question,"c2")
         c2.text = input("Enter the option letter (ex. A, B, C, etc) followed by the option value: ")
 
     for num in range(c_limit):
@@ -79,11 +79,17 @@ def main():
 
     test = etree.Element("test")
 
-    # Hard coding the questions for now for testing purposes; will allow user to select the
-    # types of questions they want and how many questions they want later
-    q1 = make_mc_question(test)
-    q2 = make_tf_question(test)
-    q3 = make_match_questions(test)
+    mc_lim = int(input("How many multiple choice questions would you like? "))
+    for num in range(mc_lim):
+        mc_q = make_mc_question(test)
+
+    tf_lim = int(input("How many true false questions would you like? "))
+    for num in range(tf_lim):
+        tf_q = make_tf_question(test)
+
+    match_lim = int(input("How many matching questions would you like? "))
+    for num in range(match_lim):
+        match_q = make_match_questions(test)
 
     # This part writes the question structure out into an xml file; the file name is
     # hard coded, but this will be changed later
