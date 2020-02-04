@@ -40,7 +40,20 @@ def askQuestions(questionDict):
                 print("correct")
             print("")
         else:
-            print("matching currently not handled")
+            cnt = 0
+            correct = 1
+            print(x.questions)
+            print("The options are "+ x.leftSide)
+            for y in x.leftside:
+                print(y)
+                answer = input(y + ":")
+                if(answer.lower() != questionDict[x][cnt].lower()):
+                    correct = 0
+                cnt = cnt+1
+            if cnt != 0:
+                print("incorrect")
+            else:
+                print("correct")
 
 
 # print("try this")
