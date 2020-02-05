@@ -59,10 +59,10 @@ def make_match_questions(root):
     q = etree.SubElement(question, "q")
     q.text = input("Enter the question you want to ask: ")
 
-    c_limit = int(input("How many terms do you want to be matched? "))
+    c1_limit = int(input("How many terms do you want to be matched? "))
     for num in range(c_limit):
-        c = etree.SubElement(question,"c")
-        c.text = input("Enter the term: ")
+        c1 = etree.SubElement(question,"c1")
+        c1.text = input("Enter the term: ")
 
     c2_limit = int(input("How many options do you want for people to choose to match with? "))
     for num in range(c2_limit):
@@ -70,8 +70,8 @@ def make_match_questions(root):
         c2.text = input("Enter the option letter (ex. A, B, C, etc) followed by the option value: ")
 
     for num in range(c_limit):
-        answer = etree.SubElement(question, "answer")
-        answer.text = input("Enter the letter of the correct answer in the order that the terms were listed: ")
+        ans = etree.SubElement(question, "ans")
+        ans.text = input("Enter the letter of the correct answer in the order that the terms were listed: ")
 
     return question
 
