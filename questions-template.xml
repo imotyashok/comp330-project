@@ -22,19 +22,19 @@
     <question>
         <type>matching</type>
         <q>Match the fruits to their colors.</q>
-        <c>Apple</c>
-        <c>Banana</c>
-        <c>Orange</c>
-        <c>Tomato</c>
+        <c1>Apple</c1>
+        <c1>Banana</c1>
+        <c1>Orange</c1>
+        <c1>Tomato</c1>
 
         <c2>Orange</c2>
         <c2>Green</c2>
         <c2>Red</c2>
         <c2>Yellow</c2>
 
-        <answer>Green</answer>
-        <answer>Yellow</answer>
-        <answer>Orange</answer>
-        <answer>Red</answer>
+        <ans>Green</ans>
+        <ans>Yellow</ans>
+        <ans>Orange</ans>
+        <ans>Red</ans>
     </question>
 </test>

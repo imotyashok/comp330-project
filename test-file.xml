@@ -16,15 +16,15 @@
   <question>
     <type>matching</type>
     <q>match the color to the fruit</q>
-    <c>red</c>
-    <c>orange</c>
-    <c>yellow</c>
+    <c1>red</c1>
+    <c1>orange</c1>
+    <c1>yellow</c1>
     <c2>a. banana</c2>
     <c2>b. strawberry</c2>
     <c2>c. blueberry</c2>
     <c2>d. orange</c2>
-    <answer>b</answer>
-    <answer>d</answer>
-    <answer>a</answer>
+    <ans>b</ans>
+    <ans>d</ans>
+    <ans>a</ans>    
   </question>
 </test>

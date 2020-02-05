@@ -33,7 +33,6 @@ def askQuestions(questionDict):
             for y in x.answers:
                 print(y)
             answer = input("Input here please: ")
-            print(questionDict[x])
             if(answer.lower() != questionDict[x].lower()):
                 print("incorrect")
             else:
@@ -43,14 +42,13 @@ def askQuestions(questionDict):
             cnt = 0
             correct = 1
             print(x.questions)
-            print("The options are "+ x.leftSide)
-            for y in x.leftside:
-                print(y)
+            print("The options are "+ str(x.rightSide))
+            for y in x.leftSide:
                 answer = input(y + ":")
                 if(answer.lower() != questionDict[x][cnt].lower()):
                     correct = 0
-                cnt = cnt+1
-            if cnt != 0:
+                cnt = cnt+1           
+            if correct != 1:
                 print("incorrect")
             else:
                 print("correct")

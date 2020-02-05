@@ -20,9 +20,13 @@ choice_arr = []
 for question in test:
     print('\n')
     toAdd = []
+    toAddL = []
+    toAddR = []
     panswers = []
+    qType = None
     for choice in question:
         if (choice.tag == 'type') and (choice.text == "matching"):
+            qType = 'matching'
             toAdd.append("matching")
         if(choice.tag == 'type') and (choice.text != "matching"):
             toAdd.append("none")
@@ -32,11 +36,26 @@ for question in test:
             panswers.append(choice.text)
         if(choice.tag == 'answer'):
             toAdd.append(choice.text)
-    questionDictionary[questionModel(toAdd[1],panswers)] =toAdd[2]
+        if(choice.tag == 'ans'):
+            panswers.append(choice.text)
+        if(choice.tag == 'c1'):
+            toAddL.append(choice.text)
+        if(choice.tag == 'c2'):
+            toAddR.append(choice.text)
+            
+            
+            
+    if qType != 'matching':        
+        questionDictionary[questionModel(toAdd[1],panswers)] =toAdd[2]
+    else:
+        questionDictionary[matchingQuestionModel(toAdd[1],toAddL ,toAddR)] = panswers 
+        
+        
+        
 print(questionDictionary)
 askQuestions(questionDictionary)
 
-print(questionDictionary)
+#print(questionDictionary)
 q5 = questionModel("hello", ["1","2"])
 
 q6 = matchingQuestionModel("helllooo", [2,3], [4,5])
