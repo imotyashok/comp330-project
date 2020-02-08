@@ -112,4 +112,7 @@ def main():
         f.write(test_content)
         print("Test saved successfully as "+filename+'.xml')
 
-main()
+# main()
+
+if __name__ == "__main__":
+    main()
