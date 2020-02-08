@@ -1,16 +1,14 @@
 from lxml import etree
 from lxml import builder
 
-# TODO: get rid of anything that's hard coded
-# TODO: implement error handling
-
 # This program allows the user to build their own quiz. It asks the user what questions
 # they want to have on the quiz, and it allows them to customize the number of options
 # for each question. Once the quiz has been built successfully, the output is saved to
 # an XML file.
 
 def make_mc_question(root):
-    print("Making multiple choice question...") # this line is for testing purposes
+    # Builds multiple choice questions
+    print("Making multiple choice question...")
 
     question = etree.SubElement(root, "question")
     type = etree.SubElement(question, "type")
@@ -30,7 +28,8 @@ def make_mc_question(root):
     return question
 
 def make_tf_question(root):
-    print("Making true false question...")  # this line is for testing purposes
+    # Builds true false questions
+    print("Making true false question...")
 
     question = etree.SubElement(root, "question")
     type = etree.SubElement(question, "type")
@@ -45,12 +44,13 @@ def make_tf_question(root):
     c.text = "False"
 
     answer = etree.SubElement(question, "answer")
-    answer.text = input("Enter the correct answer: ")
+    answer.text = input("Enter the correct answer ('true'/'false'): ")
 
     return question
 
 def make_match_questions(root):
-    print("Making matching question...")  # this line is for testing purposes
+    # Builds matching question
+    print("Making matching question...")
 
     question = etree.SubElement(root, "question")
     type = etree.SubElement(question, "type")
@@ -75,8 +75,21 @@ def make_match_questions(root):
 
     return question
 
+def file_namer():
+    # Allows user to save their generated test under a name of their own choosing,
+    # tests to make sure that the user's chosen file name is valid
+    valid = True
+    while valid:
+        filename = input("Enter the name you'd like to save your quiz as (don't put the file extension): ")
+        if ('.' in filename) or ('/' in filename):
+            print("Sorry, that file name is invalid. Try again.")
+        else:
+            valid = False
+    return filename
+
 def main():
 
+    print("Building your test...")
     test = etree.Element("test")
 
     mc_lim = int(input("How many multiple choice questions would you like? "))
@@ -91,10 +104,12 @@ def main():
     for num in range(match_lim):
         match_q = make_match_questions(test)
 
-    # This part writes the question structure out into an xml file; the file name is
-    # hard coded, but this will be changed later
-    info = (etree.tostring(test, pretty_print=True))
-    with open("test-file.xml", "wb") as f:
-        f.write(info)
+    # This saves the user generated test into a tree structure
+    test_content = (etree.tostring(test, pretty_print=True))
+
+    filename = file_namer()
+    with open(filename+".xml", "wb") as f:
+        f.write(test_content)
+        print("Test saved successfully as "+filename+'.xml')
 
 main()
